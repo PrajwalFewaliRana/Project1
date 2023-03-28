@@ -1,0 +1,20 @@
+.splide__arrow svg{
+    fill: black;
+    height: 13px;
+    width: 13px;
+}
+.splide__arrow{
+    height: 22px;
+    width: 22px;
+    background:#ffffff !important;
+    opacity: 1;
+    right: 26px;
+    top: 33px;
+}
+
+.splide__arrow:disabled{
+    opacity:0
+}
+.splide__arrow:hover:not(:disabled){
+    opacity:1
+}
