@@ -3,7 +3,8 @@ import { Splide,SplideSlide } from '@splidejs/react-splide'
 import "@splidejs/react-splide/css";
 import "../arrow.css";
 
-const Following = ({ personsapi }) => {
+
+const Following = ({personsapi}) => {
     const splideOptions = {
       perPage: 8,
       perMove: 1,

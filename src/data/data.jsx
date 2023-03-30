@@ -32,6 +32,95 @@ import img19 from "../assets/img19.jpg";
 import img20 from "../assets/img20.jpg";
 import img21 from "../assets/img21.jpg";
 
+export const links = [
+  {
+    name:"About",
+    icon:<IoIosSquare />,
+    link:"https://about.instagram.com/",
+  },
+  {
+    name:"Help",
+    icon:<IoIosSquare />,
+    link:"https://help.instagram.com/",
+  },
+  {
+    name:"Press",
+    icon:<IoIosSquare />,
+    link:"https://about.instagram.com/blog",
+  },
+  {
+    name:"API",
+    icon:<IoIosSquare />,
+    link:"https://developers.facebook.com/docs/instagram",
+  },
+  {
+    name:"Jobs",
+    icon:<IoIosSquare />,
+    link:"https://about.instagram.com/about-us/careers",
+  },
+  {
+    name:"Privacy",
+    icon:<IoIosSquare />,
+    link:"https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect",
+  },
+  {
+    name:"Terms",
+    icon:<IoIosSquare />,
+    link:"https://help.instagram.com/581066165581870/"
+  },
+  {
+    name:"Locations",
+    icon:<IoIosSquare />,
+    link:"https://www.instagram.com/explore/locations/"
+  },
+  {
+    name:"Language",
+    icon:<IoIosSquare />
+  },
+  {
+    name:"Meta Verified",
+    link:"https://about.meta.com/technologies/meta-verified/",
+  },
+]
+
+export const suggestions = [
+  {
+    id:7,
+    name:"Cristiano",
+    text:"Suggested for you",
+    follow:"Follow",
+    img:img11,
+  },
+  {
+    id:30,
+    name:"Lionel Messi",
+    text:"Suggested for you",
+    follow:"Follow",
+    img:img13,
+  },
+  {
+    id:11,
+    name:"Neymar",
+    text:"Suggested for you",
+    follow:"Follow",
+    img:img15,
+  },
+  {
+    id:9,
+    name:"Haaland",
+    text:"Suggested for you",
+    follow:"Follow",
+    img:img17,
+  },
+  {
+    id:10,
+    name:"Mbappe",
+    text:"Suggested for you",
+    follow:"Follow",
+    img:img21,
+  },
+]
+
 export const navbarapi = [
   {
     id: "home",

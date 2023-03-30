@@ -44,17 +44,17 @@ const Home = () => {
             </div>
             <div className="w-full flex justify-between items-center my-[10px]">
               <div className="flex items-center gap-[14px]">
-                <span className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer ">
+                <span title="like" className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer ">
                   {item.icon4}
                 </span>
-                <span className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer ">
+                <span title="Comment" className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer ">
                   {item.icon5}
                 </span>
-                <span className="text-white font-bold text-[22px] hover:text-[#8e8e8e] cursor-pointer ">
+                <span title="Share Post" className="text-white font-bold text-[22px] hover:text-[#8e8e8e] cursor-pointer ">
                   {item.icon6}
                 </span>
               </div>
-              <div className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer ">
+              <div title="Save" className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer ">
                 {item.icon7}
               </div>
             </div>
@@ -70,7 +70,7 @@ const Home = () => {
                 placeholder="Add a comment..."
                 className="bg-transparent outline-none border-none caret-white"
               />
-              <span className="text-[#8e8e8e] text-[14px] cursor-pointer hover:text-[#8e8e8ed2]">{item.icon8}</span>
+              <span title="Emoji" className="text-[#8e8e8e] text-[14px] cursor-pointer hover:text-[#8e8e8ed2]">{item.icon8}</span>
             </div>
           </div>
         ))}
