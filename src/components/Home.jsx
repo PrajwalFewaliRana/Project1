@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { personsapi } from "../data/data";
 import Following from "./Following";
 
 const Home = () => {
+  const [inputValue, setInputValue] = useState("");
+
+  const handleInputChange = (event) => {
+    setInputValue(event.target.value);
+  };
+
+  const handlePostButtonClick = () => {
+    // Handle the post button click event
+    console.log("Post button clicked");
+  };
+
   return (
-    <div className=" w-[47vw] ml-[45px] mt-[48px] ">
+    <div className="w-[47vw] ml-[45px] mt-[48px] ">
       <Following personsapi={personsapi} />
       <div className="mt-[39px] w-full px-[87px]">
         {personsapi.map((item, index) => (
@@ -44,17 +55,29 @@ const Home = () => {
             </div>
             <div className="w-full flex justify-between items-center my-[10px]">
               <div className="flex items-center gap-[14px]">
-                <span title="like" className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer ">
+                <span
+                  title="like"
+                  className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer "
+                >
                   {item.icon4}
                 </span>
-                <span title="Comment" className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer ">
+                <span
+                  title="Comment"
+                  className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer "
+                >
                   {item.icon5}
                 </span>
-                <span title="Share Post" className="text-white font-bold text-[22px] hover:text-[#8e8e8e] cursor-pointer ">
+                <span
+                  title="Share Post"
+                  className="text-white font-bold text-[22px] hover:text-[#8e8e8e] cursor-pointer "
+                >
                   {item.icon6}
                 </span>
               </div>
-              <div title="Save" className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer ">
+              <div
+                title="Save"
+                className="text-white font-normal text-[28px] hover:text-[#8e8e8e] cursor-pointer "
+              >
                 {item.icon7}
               </div>
             </div>
@@ -66,11 +89,22 @@ const Home = () => {
             </p>
             <div className="flex justify-between items-center mb-[20px]">
               <input
+                onChange={handleInputChange}
                 type="text"
                 placeholder="Add a comment..."
-                className="bg-transparent outline-none border-none caret-white"
+                className="bg-transparent outline-none text-[15px] leading-tight border-none text-white caret-white"
               />
-              <span title="Emoji" className="text-[#8e8e8e] text-[14px] cursor-pointer hover:text-[#8e8e8ed2]">{item.icon8}</span>
+              <div className="flex items-center gap-[7px]">
+                {inputValue.length > 0 && (
+                  <button onClick={handlePostButtonClick} className="text-[#0095f6] font-semibold text-[14px] leading-tight">Post</button>
+                )}
+                <span
+                  title="Emoji"
+                  className="text-[#8e8e8e] text-[14px] cursor-pointer hover:text-[#8e8e8ed2]"
+                >
+                  {item.icon8}
+                </span>
+              </div>
             </div>
           </div>
         ))}

@@ -86,14 +86,14 @@ export const links = [
 export const suggestions = [
   {
     id:7,
-    name:"Cristiano",
+    name:"Ronaldo",
     text:"Suggested for you",
     follow:"Follow",
     img:img11,
   },
   {
     id:30,
-    name:"Lionel Messi",
+    name:"Messi",
     text:"Suggested for you",
     follow:"Follow",
     img:img13,
@@ -222,7 +222,7 @@ export const personsapi = [
     icon7: <BiBookmark />,
     icon8: <VscSmiley />,
     icon9: <MdVolumeOff />,
-    likes: "335 lies",
+    likes: "335 likes",
   },
   {
     name: "Shobhan Jodi",
@@ -282,7 +282,7 @@ export const personsapi = [
     icon7: <BiBookmark />,
     icon8: <VscSmiley />,
     icon9: <MdVolumeOff />,
-    likes: "500 lies",
+    likes: "500 likes",
   },
   {
     name: "Farrinni",
@@ -372,7 +372,7 @@ export const personsapi = [
     icon7: <BiBookmark />,
     icon8: <VscSmiley />,
     icon9: <MdVolumeOff />,
-    likes: "3,500 lies",
+    likes: "3,500 likes",
   },
   {
     name: "Ogunsendi",
@@ -402,7 +402,7 @@ export const personsapi = [
     icon7: <BiBookmark />,
     icon8: <VscSmiley />,
     icon9: <MdVolumeOff />,
-    likes: "4,000 lies",
+    likes: "4,000 likes",
   },
   {
     name: "Sonnie Hiles",
@@ -432,7 +432,7 @@ export const personsapi = [
     icon7: <BiBookmark />,
     icon8: <VscSmiley />,
     icon9: <MdVolumeOff />,
-    likes: "5,000",
+    likes: "5,000 likes",
   },
   {
     name: "Mellisa Askew",
