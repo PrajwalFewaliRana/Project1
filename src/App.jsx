@@ -4,6 +4,9 @@ import Search from "./components/Search"
 import HomePage from "./components/HomePage"
 import Message from "./components/Message"
 import Notification from "./components/Notification"
+import Explore from "./components/Explore"
+import Reels from "./components/Reels"
+import Create from "./components/Create"
 
 
 
@@ -18,7 +21,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/messages" element={<Message />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/reels" element={<Reels />} />
         </Routes>
+        <Create />
       </div>
     </Router>
   )

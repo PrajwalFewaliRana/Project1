@@ -13,6 +13,7 @@ import {
   setCloseNotification,
   setOpenNotification,
 } from "../store/NotificationSlice";
+import { setOpenCreate } from "../store/CreateSlice";
 
 const Sidebar = () => {
   const [showName, setShowName] = useState(true);
@@ -20,6 +21,14 @@ const Sidebar = () => {
   const dispatch = useDispatch();
   const ifSearchState = useSelector(selectSearchState);
   const ifNotificationState = useSelector(selectNotificationState);
+
+  const onCreateClick = () => {
+    dispatch(
+      setOpenCreate({
+        createState: true,
+      })
+    );
+  };
 
   const onNotificationToggle = () => {
     if (ifNotificationState) {
@@ -96,6 +105,8 @@ const Sidebar = () => {
                 OnSearchToggle();
               } else if (index === 5) {
                 onNotificationToggle();
+              } else if (index ===6) {
+                onCreateClick();
               }
             }}
             key={item.id}

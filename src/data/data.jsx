@@ -32,6 +32,94 @@ import img19 from "../assets/img19.jpg";
 import img20 from "../assets/img20.jpg";
 import img21 from "../assets/img21.jpg";
 
+export const notifications = [
+  {
+    img:img21,
+    text:"Krishna, from your contacts, is on Instagram as krishna212.",
+    date:"4d",
+    btn:"Follow"
+  },
+  {
+    text:"This month"
+  },
+  {
+    img:img20,
+    text:"sgxeagle is on Instagram. nimatmg_ and 4 others also follow them.",
+    date:"1w",
+    btn:"Follow"
+  },
+  {
+    img:img19,
+    text:"sawnjb_khanal is on Instagram. mafianinjayt_ and 1 other follow them.",
+    date:"2w",
+    btn:"Follow"
+  },
+  {
+    img:img18,
+    text:"suyog_sapkota is on Instagram. mafianinjayt_ and 1 other follow them.",
+    date:"2w",
+    btn:"Follow"
+  },
+  {
+    text:"Earlier"
+  },
+  {
+    img:img17,
+    text:"ghaneysiir is on Instagram. mafianinjayt_ and 2 others also follow them.",
+    date:"4w",
+    btn:"Follow"
+  },
+  {
+    img:img16,
+    text:"Gautam Man, from your contacts, is on Instagram as gautam.gole.22.",
+    date:"5w",
+    btn:"Follow"
+  },
+  {
+    img:img15,
+    text:"Ram Magar, from your contacts, is on Instagram as MgrRam12.",
+    date:"10w",
+    btn:"Follow"
+  },
+  {
+    img:img14,
+    text:"azeet_aj is on Instagram. cr7horaaa and 2 others also follow them.",
+    date:"11w",
+    btn:"Follow"
+  },
+  {
+    img:img13,
+    text:"raw_from_ryakxol is on Instagram. cr7horaaa and 1 other follow them.",
+    date:"8w",
+    btn:"Follow"
+  },
+  {
+    img:img12,
+    text:"dgx_hellrider is on Instagram. mafianinjayt_ and 4 others also follow them.",
+    date:"9w",
+    btn:"Follow"
+  },
+  {
+    img:img11,
+    text:"Cristiano Ronaldo started following you.",
+    date:"12w",
+    btn:"Follow"
+  },
+  {
+    img:img10,
+    text:"Lionel Messi started following you.",
+    date:"10w",
+    btn:"Follow"
+  },
+  {
+    img:img9,
+    text:"Neymar started following you.",
+    date:"9w",
+    btn:"Follow"
+  },
+
+]
+
 export const links = [
   {
     name:"About",
@@ -161,7 +249,7 @@ export const navbarapi = [
   {
     id: "create",
     title: "Create",
-    link: "/create",
+    link: "/",
     icon: <TbSquarePlus />,
   },
   {
