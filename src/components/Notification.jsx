@@ -21,7 +21,7 @@ const Notification = () => {
       <div className="w-full">
         {
           notifications.map((item,index)=>(
-            <div key={index} className={` ${index === 0 || index===4 ? "border-b-[1px] border-[#262626] pb-[15px]" : ""}  `}>
+            <div key={index} className={` ${index === 0 || index===4 ? "border-b-[1px] border-[#262626] pb-[15px]" : ""} cursor-pointer `}>
               <div className="flex my-[15px] gap-[10px] w-full items-center justify-between px-[23px]">
               <div className={`flex ${ index === 1 || index === 5 ? "hidden" :  "" } p-[2px] h-[55px] w-[55px] rounded-full gradient-bcg items-center justify-center`}>
                 <img className="h-full w-full rounded-full object-cover border-[2px] border-black" src={item.img} alt="profile/img" />

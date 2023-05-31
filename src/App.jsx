@@ -7,6 +7,8 @@ import Notification from "./components/Notification"
 import Explore from "./components/Explore"
 import Reels from "./components/Reels"
 import Create from "./components/Create"
+import Profile from "./components/Profile"
+import More from "./components/More"
 
 
 
@@ -23,8 +25,10 @@ function App() {
           <Route path="/messages" element={<Message />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/reels" element={<Reels />} />
+          <Route path="/profile/" element={<Profile />} />
         </Routes>
         <Create />
+        <More />
       </div>
     </Router>
   )

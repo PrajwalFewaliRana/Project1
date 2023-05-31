@@ -1,13 +1,13 @@
 import { CiSearch } from "react-icons/ci";
 import { AiFillHome, AiOutlineHeart } from "react-icons/ai";
 import { MdVolumeOff, MdOutlineExplore } from "react-icons/md";
-import { BsCollectionPlay } from "react-icons/bs";
+import { BsCollectionPlay, BsClockHistory } from "react-icons/bs";
 import { RiMessengerLine, RiChat3Line } from "react-icons/ri";
-import { TbSquarePlus } from "react-icons/tb";
+import { TbSquarePlus, TbMessageReport } from "react-icons/tb";
 import { VscCircleLarge, VscSmiley } from "react-icons/vsc";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { BiBookmark, BiDotsHorizontalRounded } from "react-icons/bi";
-import { IoIosSquare } from "react-icons/io";
+import { BiBookmark, BiDotsHorizontalRounded,BiMoon } from "react-icons/bi";
+import { IoIosSquare, IoIosSettings } from "react-icons/io";
 import { SlPaperPlane } from "react-icons/sl";
 
 import img1 from "../assets/img1.jpg";
@@ -32,182 +32,204 @@ import img19 from "../assets/img19.jpg";
 import img20 from "../assets/img20.jpg";
 import img21 from "../assets/img21.jpg";
 
+export const more = [
+  {
+    icon: <IoIosSettings />,
+    name: "Settings",
+  },
+  {
+    icon: <BsClockHistory />,
+    name: "Your Activity",
+  },
+  {
+    icon: <BiBookmark />,
+    name: "Saved",
+  },
+  {
+    icon: <BiMoon />,
+    name: "Switch appearance",
+  },
+  {
+    icon: <TbMessageReport />,
+    name: "Report a problem",
+  },
+];
+
 export const notifications = [
   {
-    img:img21,
-    text:"Krishna, from your contacts, is on Instagram as krishna212.",
-    date:"4d",
-    btn:"Follow"
+    img: img21,
+    text: "Krishna, from your contacts, is on Instagram as krishna212.",
+    date: "4d",
+    btn: "Follow",
   },
   {
-    text:"This month"
+    text: "This month",
   },
   {
-    img:img20,
-    text:"sgxeagle is on Instagram. nimatmg_ and 4 others also follow them.",
-    date:"1w",
-    btn:"Follow"
+    img: img20,
+    text: "sgxeagle is on Instagram. nimatmg_ and 4 others also follow them.",
+    date: "1w",
+    btn: "Follow",
   },
   {
-    img:img19,
-    text:"sawnjb_khanal is on Instagram. mafianinjayt_ and 1 other follow them.",
-    date:"2w",
-    btn:"Follow"
+    img: img19,
+    text: "sawnjb_khanal is on Instagram. mafianinjayt_ and 1 other follow them.",
+    date: "2w",
+    btn: "Follow",
   },
   {
-    img:img18,
-    text:"suyog_sapkota is on Instagram. mafianinjayt_ and 1 other follow them.",
-    date:"2w",
-    btn:"Follow"
+    img: img18,
+    text: "suyog_sapkota is on Instagram. mafianinjayt_ and 1 other follow them.",
+    date: "2w",
+    btn: "Follow",
   },
   {
-    text:"Earlier"
+    text: "Earlier",
   },
   {
-    img:img17,
-    text:"ghaneysiir is on Instagram. mafianinjayt_ and 2 others also follow them.",
-    date:"4w",
-    btn:"Follow"
+    img: img17,
+    text: "ghaneysiir is on Instagram. mafianinjayt_ and 2 others also follow them.",
+    date: "4w",
+    btn: "Follow",
   },
   {
-    img:img16,
-    text:"Gautam Man, from your contacts, is on Instagram as gautam.gole.22.",
-    date:"5w",
-    btn:"Follow"
+    img: img16,
+    text: "Gautam Man, from your contacts, is on Instagram as gautam.gole.22.",
+    date: "5w",
+    btn: "Follow",
   },
   {
-    img:img15,
-    text:"Ram Magar, from your contacts, is on Instagram as MgrRam12.",
-    date:"10w",
-    btn:"Follow"
+    img: img15,
+    text: "Ram Magar, from your contacts, is on Instagram as MgrRam12.",
+    date: "10w",
+    btn: "Follow",
   },
   {
-    img:img14,
-    text:"azeet_aj is on Instagram. cr7horaaa and 2 others also follow them.",
-    date:"11w",
-    btn:"Follow"
+    img: img14,
+    text: "azeet_aj is on Instagram. cr7horaaa and 2 others also follow them.",
+    date: "11w",
+    btn: "Follow",
   },
   {
-    img:img13,
-    text:"raw_from_ryakxol is on Instagram. cr7horaaa and 1 other follow them.",
-    date:"8w",
-    btn:"Follow"
+    img: img13,
+    text: "raw_from_ryakxol is on Instagram. cr7horaaa and 1 other follow them.",
+    date: "8w",
+    btn: "Follow",
   },
   {
-    img:img12,
-    text:"dgx_hellrider is on Instagram. mafianinjayt_ and 4 others also follow them.",
-    date:"9w",
-    btn:"Follow"
+    img: img12,
+    text: "dgx_hellrider is on Instagram. mafianinjayt_ and 4 others also follow them.",
+    date: "9w",
+    btn: "Follow",
   },
   {
-    img:img11,
-    text:"Cristiano Ronaldo started following you.",
-    date:"12w",
-    btn:"Follow"
+    img: img11,
+    text: "Cristiano Ronaldo started following you.",
+    date: "12w",
+    btn: "Follow",
   },
   {
-    img:img10,
-    text:"Lionel Messi started following you.",
-    date:"10w",
-    btn:"Follow"
+    img: img10,
+    text: "Lionel Messi started following you.",
+    date: "10w",
+    btn: "Follow",
   },
   {
-    img:img9,
-    text:"Neymar started following you.",
-    date:"9w",
-    btn:"Follow"
+    img: img9,
+    text: "Neymar started following you.",
+    date: "9w",
+    btn: "Follow",
   },
-
-]
+];
 
 export const links = [
   {
-    name:"About",
-    icon:<IoIosSquare />,
-    link:"https://about.instagram.com/",
+    name: "About",
+    icon: <IoIosSquare />,
+    link: "https://about.instagram.com/",
   },
   {
-    name:"Help",
-    icon:<IoIosSquare />,
-    link:"https://help.instagram.com/",
+    name: "Help",
+    icon: <IoIosSquare />,
+    link: "https://help.instagram.com/",
   },
   {
-    name:"Press",
-    icon:<IoIosSquare />,
-    link:"https://about.instagram.com/blog",
+    name: "Press",
+    icon: <IoIosSquare />,
+    link: "https://about.instagram.com/blog",
   },
   {
-    name:"API",
-    icon:<IoIosSquare />,
-    link:"https://developers.facebook.com/docs/instagram",
+    name: "API",
+    icon: <IoIosSquare />,
+    link: "https://developers.facebook.com/docs/instagram",
   },
   {
-    name:"Jobs",
-    icon:<IoIosSquare />,
-    link:"https://about.instagram.com/about-us/careers",
+    name: "Jobs",
+    icon: <IoIosSquare />,
+    link: "https://about.instagram.com/about-us/careers",
   },
   {
-    name:"Privacy",
-    icon:<IoIosSquare />,
-    link:"https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect",
+    name: "Privacy",
+    icon: <IoIosSquare />,
+    link: "https://privacycenter.instagram.com/policy/?entry_point=ig_help_center_data_policy_redirect",
   },
   {
-    name:"Terms",
-    icon:<IoIosSquare />,
-    link:"https://help.instagram.com/581066165581870/"
+    name: "Terms",
+    icon: <IoIosSquare />,
+    link: "https://help.instagram.com/581066165581870/",
   },
   {
-    name:"Locations",
-    icon:<IoIosSquare />,
-    link:"https://www.instagram.com/explore/locations/"
+    name: "Locations",
+    icon: <IoIosSquare />,
+    link: "https://www.instagram.com/explore/locations/",
   },
   {
-    name:"Language",
-    icon:<IoIosSquare />
+    name: "Language",
+    icon: <IoIosSquare />,
   },
   {
-    name:"Meta Verified",
-    link:"https://about.meta.com/technologies/meta-verified/",
+    name: "Meta Verified",
+    link: "https://about.meta.com/technologies/meta-verified/",
   },
-]
+];
 
 export const suggestions = [
   {
-    id:7,
-    name:"Ronaldo",
-    text:"Suggested for you",
-    follow:"Follow",
-    img:img11,
+    id: 7,
+    name: "Ronaldo",
+    text: "Suggested for you",
+    follow: "Follow",
+    img: img11,
   },
   {
-    id:30,
-    name:"Messi",
-    text:"Suggested for you",
-    follow:"Follow",
-    img:img13,
+    id: 30,
+    name: "Messi",
+    text: "Suggested for you",
+    follow: "Follow",
+    img: img13,
   },
   {
-    id:11,
-    name:"Neymar",
-    text:"Suggested for you",
-    follow:"Follow",
-    img:img15,
+    id: 11,
+    name: "Neymar",
+    text: "Suggested for you",
+    follow: "Follow",
+    img: img15,
   },
   {
-    id:9,
-    name:"Haaland",
-    text:"Suggested for you",
-    follow:"Follow",
-    img:img17,
+    id: 9,
+    name: "Haaland",
+    text: "Suggested for you",
+    follow: "Follow",
+    img: img17,
   },
   {
-    id:10,
-    name:"Mbappe",
-    text:"Suggested for you",
-    follow:"Follow",
-    img:img21,
+    id: 10,
+    name: "Mbappe",
+    text: "Suggested for you",
+    follow: "Follow",
+    img: img21,
   },
-]
+];
 
 export const navbarapi = [
   {
@@ -255,7 +277,7 @@ export const navbarapi = [
   {
     id: "profile",
     title: "Profile",
-    link: "/profile",
+    link: "/profile/",
     icon: <VscCircleLarge />,
   },
   {

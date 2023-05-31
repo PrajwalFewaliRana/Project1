@@ -14,6 +14,7 @@ import {
   setOpenNotification,
 } from "../store/NotificationSlice";
 import { setOpenCreate } from "../store/CreateSlice";
+import { selectMoreState, setCloseMore, setOpenMore } from "../store/MoreSlice";
 
 const Sidebar = () => {
   const [showName, setShowName] = useState(true);
@@ -21,6 +22,7 @@ const Sidebar = () => {
   const dispatch = useDispatch();
   const ifSearchState = useSelector(selectSearchState);
   const ifNotificationState = useSelector(selectNotificationState);
+  const ifMoreState = useSelector(selectMoreState);
 
   const onCreateClick = () => {
     dispatch(
@@ -28,6 +30,22 @@ const Sidebar = () => {
         createState: true,
       })
     );
+  };
+
+  const onMoreClick = () => {
+    if (ifMoreState) {
+      dispatch(
+        setCloseMore({
+          moreState: false,
+        })
+      );
+    } else {
+      dispatch(
+        setOpenMore({
+          moreState: true,
+        })
+      );
+    }
   };
 
   const onNotificationToggle = () => {
@@ -105,15 +123,17 @@ const Sidebar = () => {
                 OnSearchToggle();
               } else if (index === 5) {
                 onNotificationToggle();
-              } else if (index ===6) {
+              } else if (index === 6) {
                 onCreateClick();
+              } else if (index === 8) {
+                onMoreClick();
               }
             }}
             key={item.id}
             to={item.link}
             className={`w-[34vb] ${
               showName ? "border-none" : "w-full"
-            } flex items-center gap-4 cursor-pointer rounded-lg hover:bg-[#262626] px-1.5 py-2 group  ${
+            } flex items-center gap-4 cursor-pointer rounded-lg hover:bg-[#262626] active:bg-[#26262688] px-1.5 py-2 group  ${
               index === 0 ? "mt-2" : "mt-3"
             } ${
               activeItem === index
