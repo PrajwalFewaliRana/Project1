@@ -1,10 +1,9 @@
 # Project1
-This project was made by uinge vite + react with tailwind css.
+This project was made by using vite + react with tailwind css.
 
-This is my first project where i clonned the design of instagram and the function as well. I also made it responsive to all device but
-not to the device greater than mine.
-I tried my best to copy all the function of instagram and i do sucess but there are some function which i have not coded in this clone
-app . They are like : comment section and to do comment,like and share add to favourites etc and also login etc.
+This is my first project where i clonned the design of instagram and the function as well. I also made it responsive to all devices but not to the device greater than mine.
+I tried my best to copy all the function of instagram and i do success to make some but there are some function which i have not coded in this colne app. 
+They are like : comment section and to do comment,like and share ,add to favourites etc and also login.
 
 There are also some bugs (only from 1263- 1326px width) like:
 If you click to the search bar it opens search menu and hide the names and only shows icons and without closing the search bar if you
