@@ -5,20 +5,23 @@ import img from "../assets/PRAJWAL.jpg";
 
 const Details = () => {
   return (
-    <div className="ml-[58px] mt-[55px] w-full pr-[48px]">
+    <div className="ml-[58px] mt-[55px] xl:w-[30vw] w-full pr-[48px] lg:hidden">
       <div className="flex justify-between items-center">
         <div className="flex gap-[18px]">
-          <a href="/profile/" className="h-[57px] w-[57px] rounded-full" >
-          <img
-            src={img}
-            alt="person/profile"
-            className="cursor-pointer h-full w-full rounded-full object-cover"
-          />
+          <a href="/profile/" className="h-[57px] w-[57px] rounded-full">
+            <img
+              src={img}
+              alt="person/profile"
+              className="cursor-pointer h-full w-full rounded-full object-cover"
+            />
           </a>
-          
+
           <div className="self-center ">
             <h1 className="text-[#fafafa] cursor-pointer font-semibold text-[14px] leading-[18px] ">
-              <a href="/profile" className="active:text-[#a8a8a8]">prajwalmagar2021</a> <br />
+              <a href="/profile" className="active:text-[#a8a8a8]">
+                prajwalmagar2021
+              </a>{" "}
+              <br />
               <span className="text-[#a8a8a8] cursor-pointer font-normal text-[14px] leading-[18px] ">
                 PraJwal MaGar
               </span>

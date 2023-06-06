@@ -3,6 +3,7 @@ import { navbarapi } from "../data/data";
 import { Link } from "react-router-dom";
 import img from "../assets/instagram.png";
 import { useDispatch, useSelector } from "react-redux";
+
 import {
   selectSearchState,
   setCloseSearch,
@@ -93,26 +94,28 @@ const Sidebar = () => {
       return prevShowName;
     });
   };
+
   return (
     <div
       className={`${
-        showName ? "" : "mr-[170.5px]"
-      } h-screen max-w-[20vw] z-[2] pt-3 pl-[15px] pr-[15px] bg-black border-r-[1px] border-[#262626] sticky left-0 top-0 block`}
+        showName ? "" : "mr-[170.5px] xl:mr-[0]"
+      } h-screen xsm:hidden max-w-[20vw] xl:w-[75px] z-[2] pt-3 pl-[15px] pr-[15px] bg-black border-r-[1px] border-[#262626] sticky left-0 top-0`}
     >
       <div className="ml-1">
-        {showName ? (
-          <img
-            className="w-[110px] h-[85px]"
-            src="/name.png"
-            alt="instaName/logo"
-          />
-        ) : (
-          <img
-            className="h-6 w-6 my-[25px] mb-[45px] translate-x-[5px]"
-            src={img}
-            alt="logo/img"
-          />
-        )}
+        <img
+          className={`w-[110px] h-[85px] ${
+            showName === true ? "" : "hidden"
+          } xl:hidden `}
+          src="/name.png"
+          alt="instaName/logo"
+        />
+        <img
+          className={`h-6 w-6 my-[25px] mb-[45px] translate-x-[5px] ${
+            showName === true ? "hidden" : ""
+          } xl:block  `}
+          src={img}
+          alt="logo/img"
+        />
       </div>
       <div>
         {navbarapi.map((item, index) => (
@@ -131,7 +134,7 @@ const Sidebar = () => {
             }}
             key={item.id}
             to={item.link}
-            className={`w-[34vb] ${
+            className={`w-[34vb] xl:w-full ${
               showName ? "border-none" : "w-full"
             } flex items-center gap-4 cursor-pointer rounded-lg hover:bg-[#262626] active:bg-[#26262688] px-1.5 py-2 group  ${
               index === 0 ? "mt-2" : "mt-3"
@@ -143,7 +146,7 @@ const Sidebar = () => {
           >
             <div className="text-white text-[28px]">{item.icon}</div>
             {showName && (
-              <div className="text-white group-focus:font-bold roboto">
+              <div className="text-white xl:hidden group-focus:font-bold roboto">
                 {item.title}
               </div>
             )}

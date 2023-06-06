@@ -6,7 +6,7 @@ import { RiMessengerLine, RiChat3Line } from "react-icons/ri";
 import { TbSquarePlus, TbMessageReport } from "react-icons/tb";
 import { VscCircleLarge, VscSmiley } from "react-icons/vsc";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { BiBookmark, BiDotsHorizontalRounded,BiMoon } from "react-icons/bi";
+import { BiBookmark, BiDotsHorizontalRounded, BiMoon } from "react-icons/bi";
 import { IoIosSquare, IoIosSettings } from "react-icons/io";
 import { SlPaperPlane } from "react-icons/sl";
 
@@ -290,7 +290,7 @@ export const navbarapi = [
 
 export const personsapi = [
   {
-    name: "Oliver Ragfelt",
+    name: "Oliver",
     profile: img1,
     posts: img1,
     time: "1 d",
@@ -305,7 +305,7 @@ export const personsapi = [
     likes: "120 likes",
   },
   {
-    name: "Anthony Tran",
+    name: "Anthony",
     profile: img2,
     posts: img2,
     time: "4 h",
@@ -320,7 +320,7 @@ export const personsapi = [
     likes: "1,675 likes",
   },
   {
-    name: "Ali Solemani",
+    name: "Solemani",
     profile: img3,
     posts: img3,
     time: "4 d",
@@ -335,7 +335,7 @@ export const personsapi = [
     likes: "335 likes",
   },
   {
-    name: "Shobhan Jodi",
+    name: "Shobhan",
     profile: img4,
     posts: img4,
     time: "3 h",
@@ -350,7 +350,7 @@ export const personsapi = [
     likes: "1,200 likes",
   },
   {
-    name: "Mael Baaland",
+    name: "Baaland",
     profile: img5,
     posts: img5,
     time: "1 d",
@@ -380,7 +380,7 @@ export const personsapi = [
     likes: "2,340 likes",
   },
   {
-    name: "Arul Lin",
+    name: "Arul",
     profile: img7,
     posts: img7,
     time: "1 d",
@@ -410,7 +410,7 @@ export const personsapi = [
     likes: "12,800 likes",
   },
   {
-    name: "Robert Nelson",
+    name: "Robert",
     profile: img9,
     posts: img9,
     time: "12 h",
@@ -425,7 +425,7 @@ export const personsapi = [
     likes: "4,400 likes",
   },
   {
-    name: "Omid Armin",
+    name: "Armin",
     profile: img10,
     posts: img10,
     time: "1 d",
@@ -470,7 +470,7 @@ export const personsapi = [
     likes: "2,342 likes",
   },
   {
-    name: "Wassim Chouk",
+    name: "Wassim",
     profile: img13,
     posts: img13,
     time: "1 d",
@@ -500,7 +500,7 @@ export const personsapi = [
     likes: "120 likes",
   },
   {
-    name: "Kamran Ch",
+    name: "Kamran",
     profile: img15,
     posts: img15,
     time: "2 d",
@@ -515,7 +515,7 @@ export const personsapi = [
     likes: "4,000 likes",
   },
   {
-    name: "Sonnie Hiles",
+    name: "Sonnie",
     profile: img16,
     posts: img16,
     time: "1 d",
@@ -545,7 +545,7 @@ export const personsapi = [
     likes: "5,000 likes",
   },
   {
-    name: "Mellisa Askew",
+    name: "Mellisa",
     profile: img18,
     posts: img18,
     time: "1 d",
@@ -560,7 +560,7 @@ export const personsapi = [
     likes: "1,200 likes",
   },
   {
-    name: "Itachi Uchiha",
+    name: "Itachi",
     profile: img19,
     posts: img19,
     time: "1 d",
@@ -590,7 +590,7 @@ export const personsapi = [
     likes: "1,200 likes",
   },
   {
-    name: "Sasuke Uchiha",
+    name: "Sasuke",
     profile: img21,
     posts: img21,
     time: "1 d",
